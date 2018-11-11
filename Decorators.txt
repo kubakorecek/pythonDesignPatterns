@@ -1,55 +1,75 @@
+10
 main with parrameters length:(length)
 
 
 merge sort time:
-Function perform task in: 2.288818359375e-05
+Function perform task in: 3.0040740966796875e-05
 
 
 
 insertion sort time:
-Function perform task in: 8.58306884765625e-06
+Function perform task in: 9.775161743164062e-06
 
+Python sorted at: 
+Function perform task in: 3.337860107421875e-06
+
+100
 main with parrameters length:(length)
 
 
 merge sort time:
-Function perform task in: 0.00021338462829589844
+Function perform task in: 0.0002472400665283203
 
 
 
 insertion sort time:
-Function perform task in: 0.00047206878662109375
+Function perform task in: 0.0005536079406738281
 
+Python sorted at: 
+Function perform task in: 1.5735626220703125e-05
+
+1000
 main with parrameters length:(length)
 
 
 merge sort time:
-Function perform task in: 0.0026085376739501953
+Function perform task in: 0.0029144287109375
 
 
 
 insertion sort time:
-Function perform task in: 0.056084632873535156
+Function perform task in: 0.07015085220336914
 
+Python sorted at: 
+Function perform task in: 0.0001442432403564453
+
+5000
 main with parrameters length:(length)
 
 
 merge sort time:
-Function perform task in: 0.0451502799987793
+Function perform task in: 0.025514602661132812
 
 
 
 insertion sort time:
-Function perform task in: 7.827477931976318
+Function perform task in: 2.146890640258789
 
+Python sorted at: 
+Function perform task in: 0.0006659030914306641
+
+10000
 main with parrameters length:(length)
 
 
 merge sort time:
-Function perform task in: 0.04414010047912598
+Function perform task in: 0.05528450012207031
 
 
 
 insertion sort time:
-Function perform task in: 6.000350713729858
+Function perform task in: 10.014321088790894
+
+Python sorted at: 
+Function perform task in: 0.0022687911987304688
 
