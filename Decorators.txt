@@ -1,0 +1,55 @@
+main with parrameters length:(length)
+
+
+merge sort time:
+Function perform task in: 2.288818359375e-05
+
+
+
+insertion sort time:
+Function perform task in: 8.58306884765625e-06
+
+main with parrameters length:(length)
+
+
+merge sort time:
+Function perform task in: 0.00021338462829589844
+
+
+
+insertion sort time:
+Function perform task in: 0.00047206878662109375
+
+main with parrameters length:(length)
+
+
+merge sort time:
+Function perform task in: 0.0026085376739501953
+
+
+
+insertion sort time:
+Function perform task in: 0.056084632873535156
+
+main with parrameters length:(length)
+
+
+merge sort time:
+Function perform task in: 0.0451502799987793
+
+
+
+insertion sort time:
+Function perform task in: 7.827477931976318
+
+main with parrameters length:(length)
+
+
+merge sort time:
+Function perform task in: 0.04414010047912598
+
+
+
+insertion sort time:
+Function perform task in: 6.000350713729858
+
