@@ -38,7 +38,7 @@ class ClassicalSingleton(object):
 
 class ClassicalSingletonLazy(object):
 
-    """Only one object is created wtih lazy
+    """Only one object is created with lazy
     loading!!!"""
 
     __instance = None
@@ -66,7 +66,7 @@ def main():
     print(a.x)
     b.x=2
 
-    print("b changed a since they share same space in memory!", a.x)
+    print("a changed a since they share same space in memory!", a.x)
 
     c = ClassicalSingletonLazy()
     ClassicalSingletonLazy.setInstance()
