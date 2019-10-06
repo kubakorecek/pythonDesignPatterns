@@ -62,9 +62,9 @@ class MotorcycleFactory(MotoFactory):
     @staticmethod
     def brand(type):
         if type == 'Suzuki':
-            return  Suzuki()
+            return Suzuki()
         elif type == 'Harley':
-            return  Harley()
+            return Harley()
         else:
             assert 0, "NOT IN THE STORAGE " + str(type)
 
