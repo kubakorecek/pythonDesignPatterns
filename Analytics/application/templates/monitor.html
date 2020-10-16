@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+
+
+
+
+<form>
+  <input type="submit" value="Monitor" name="analyse">
+</form>
+
+{% if graph %}
+
+<div class="row">
+
+
+<div class="table-responsive col-md-6">
+ <table id="nn" class="display">
+    <thead>
+    <tr>
+      <th>NODES</th>
+    </tr>
+  </thead>
+  <tbody>
+      {% for i in stats[0] %}
+      <tr>
+          <td>{{ i }}</td>
+        </tr>
+      {% endfor %}
+
+  </tbody>
+</table>
+
+</div>
+
+
+<div class="table-responsive col-md-6">
+   <table id="en" class="display">
+    <thead>
+    <tr>
+      <th>Edge start</th>
+        <th>Edge End</th>
+    </tr>
+  </thead>
+  <tbody>
+      {% for i in stats[1] %}
+      <tr>
+          <td>{{ i[0] }}</td>
+          <td>{{ i[1] }}</td>
+        </tr>
+      {% endfor %}
+
+  </tbody>
+</table>
+</div>
+</div>
+{% endif %}
+
+
+
+
+{{ pagination.info }}
+<table class="table">
+  <thead>
+    <tr>
+
+      <th>ID</th>
+        <th>TOTAL</th>
+        <th>GCC</th>
+        <th>COL</th>
+
+    </tr>
+  </thead>
+  <tbody>
+
+
+      {% for i in gra %}
+      {% if i.total >= 100 %}
+        <tr  class="bg-danger text-white">
+
+      {% elif i.total<100 and i.total > 50 %}
+            <tr class="bg-warning text-white">
+     {% else %}
+         <tr>
+
+          {% endif %}
+             <td><a href="{{ url_for('monitor',nxgrapx =i.id, page=page) }}" >{{ i.id }}</a> </td><td> {{ i.total }} </td><td> {{ i.gcc }} </td><td> {{ i.col }} </td>
+        </tr>
+      {% endfor %}
+
+
+
+  </tbody>
+</table>
+
+{{ pagination.links }}
+
+
+
+
+{% endblock %}

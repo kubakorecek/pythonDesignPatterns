@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Finish at {{ date }}.
+
+
+<table class="table">
+  <thead>
+    <tr>
+
+      <th>ID</th>
+        <th>TOTAL</th>
+        <th>GCC</th>
+        <th>COL</th>
+
+    </tr>
+  </thead>
+  <tbody>
+  {% for i in gra %}
+        <tr  class="bg-danger text-white">
+             <td>{{ i.id }}</a> </td><td> {{ i.total }} </td><td> {{ i.gcc }} </td><td> {{ i.col }} </td>
+        </tr>
+      {% endfor %}
+
+
+
+  </tbody>
+</table>
+
+
+</body>
+</html>
