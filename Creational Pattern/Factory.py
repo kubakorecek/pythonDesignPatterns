@@ -11,9 +11,9 @@ from abc import ABCMeta, abstractmethod
 class ShapeInterface(metaclass=ABCMeta):
 
     @classmethod
-    def __subclasscheck__(cls, subclass):
-
+    def __subclasshook__(cls, subclass):
         return (hasattr(subclass, 'draw') and callable(subclass.draw)
+                and hasattr(subclass, 'sides') and callable(subclass.sides)
                 or NotImplemented
                 )
 
@@ -33,6 +33,18 @@ class Square(ShapeInterface):
         pass
 
 
+class Rectangle(ShapeInterface):
+    def draw(self):
+        pass
+
+    def sides(self):
+        pass
+
+
 if __name__ == '__main__':
-    square = Square()
+
+    s = Square()
+
+    print(issubclass(Square, ShapeInterface))
+    print(issubclass(Rectangle, ShapeInterface))
     circle = Circle()
